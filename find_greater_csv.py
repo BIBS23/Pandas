@@ -11,9 +11,9 @@ dict = {
 
 df = pd.DataFrame(dict)
 
-df.to_csv('toppers.csv')
-mylist = pd.read_csv('toppers.csv')
+df.to_csv('toppers.csv')   # convert to csv
+mylist = pd.read_csv('toppers.csv')  #read csv
 
-sort = mylist[mylist['CGPA']>9]
+sort = mylist[mylist['CGPA']>9] # sorting
 
 print(sort)
